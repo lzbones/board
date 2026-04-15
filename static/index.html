@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QingBoard - 跨端无缝剪切板</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="app-header">
+        <h1>QingBoard</h1>
+        <p>跨端临时剪切板・点击极速复制・Ctrl+V 快速录入</p>
+    </header>
+    
+    <main class="board-grid" id="board-container">
+        <!-- 8 slots will be injected by app.js -->
+    </main>
+
+    <!-- Modal Template for secondary confirmation -->
+    <div id="confirm-modal" class="modal hidden">
+        <div class="modal-content glass">
+            <h2 id="modal-title">提示</h2>
+            <p id="modal-message">确认操作？</p>
+            <div class="modal-actions">
+                <button id="modal-cancel">取消</button>
+                <button id="modal-confirm" class="danger-btn">确认</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/app.js"></script>
+</body>
+</html>

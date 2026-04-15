@@ -1,0 +1,11 @@
+# 忽略临时用户上传的文件
+uploads/
+
+# 忽略 Python 缓存和虚拟环境文件
+__pycache__/
+venv/
+.ai-env/
+*.pyc
+
+# 忽略系统文件
+.DS_Store
